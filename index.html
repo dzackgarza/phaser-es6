@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Dragons and Stuff</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/chatbox.css">
+		<link href="https://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet">
+		<script src="http://127.0.0.1:6122/eureca.js"></script>
+	</head>
+
+	<body>
+		<div class="workaround">-</div>
+
+		<div class="flexChild rowParent" style="height:100vh; width:100vw;">
+
+			<div class="flexChild" id="content"></div>
+
+			<div class="flexChild columnParent">
+				<div class="flexChild" id="informationTabs">
+					{{> ./partials/informationTabs}}
+				</div>
+
+				<div class="flexChild chat" style="border: 1px solid white;">
+					{{> ./partials/chatbox}}
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/phaser.min.js"></script>
+		<script src="scripts/game.js"></script>
+
+	</body>
+
+</html>

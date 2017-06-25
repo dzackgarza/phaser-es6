@@ -1,0 +1,45 @@
+<div style="height:100%;">
+	<ul class="nav nav-tabs">
+		<li class="tab active"><a href="javascript:void(0)" data-toggle="tab" data-target="#page1">Status</a></li>
+		<li class="tab"><a href="javascript:void(0)" data-toggle="tab" data-target="#page2">Verbs</a></li>
+		<li class="tab"><a href="javascript:void(0)" data-toggle="tab" data-target="#page3">More</a></li>
+
+		<div id="nav-buttons" class="pull-right">
+			<div id="tabDropdown" class="btn-group btn-group-sm">
+				<div id="tabDrop" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">
+					>>
+				</div>
+				<ul class="dropdown-menu">
+					<li><a href="javascript:void(0)" data-toggle="tab" data-target="#page1">Status</a></li>
+					<li><a href="javascript:void(0)" data-toggle="tab" data-target="#page2">Verbs</a></li>
+					<li><a href="javascript:void(0)" data-toggle="tab" data-target="#page3">More</a></li>
+				</ul>
+			</div>
+			<div class="btn-group btn-group-sm">
+				<div class="btn btn-info">
+					<i class="glyphicon glyphicon-user"></i>
+				</div>
+				<div class="btn btn-default">
+					<i class="glyphicon glyphicon-th-list"></i>
+				</div>
+				<div class="btn btn-default">
+					<i class="glyphicon glyphicon-book"></i>
+				</div>
+				<div class="btn btn-default">
+					<i class="glyphicon glyphicon-cog"></i>
+				</div>
+			</div>
+		</div>
+	</ul>
+	<div class="tab-content" style="background-color: black; margin-top:-19px; height:80%;">
+		<div id="page1" class="tab-pane active">
+			{{> panel1}}
+		</div>
+		<div id="page2" class="tab-pane">
+			{{> panel2}}
+		</div>
+		<div id="page3" class="tab-pane">
+			{{> panel3}}
+		</div>
+	</div>
+</div>

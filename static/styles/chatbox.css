@@ -1,0 +1,114 @@
+* {
+  font-family: 'Lucida Console', monospace;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.chat {
+	min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  background: black;
+  color: white;
+}
+.chat ul.list {
+  width: 150px;
+  padding: 3px 0;
+}
+.chat ul.list li {
+  margin: 0 0 4px 0;
+  padding: 0 2px;
+  cursor: pointer;
+}
+.chat ul.list li.active {
+  text-decoration: underline;
+}
+.chat ul.list li span.new {
+  float: right;
+}
+.chat .chatbox-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chat .chatbox-container .message--container {
+  flex: 1;
+  overflow-y: auto;
+}
+.chat .chatbox-container .message--container .messages {
+  display: table;
+}
+.chat .chatbox-container .message--container .messages .message {
+  display: table-row;
+  clear: both;
+}
+.chat .chatbox-container .message--container .messages .message.hr {
+  height: 1px;
+  background: #666;
+}
+.chat .chatbox-container .message--container .messages .message.info .text {
+  color: #d35400;
+}
+.chat .chatbox-container .message--container .messages .message.me .from {
+  color: #c0392b;
+}
+.chat .chatbox-container .message--container .messages .message.me .text {
+  color: #666;
+}
+.chat .chatbox-container .message--container .messages .message .time {
+  display: table-cell;
+  padding: 2px 0;
+  white-space: pre;
+}
+.chat .chatbox-container .message--container .messages .message .from {
+  display: table-cell;
+  color: #2980b9;
+  padding: 2px 5px 2px 0;
+  white-space: pre;
+}
+.chat .chatbox-container .message--container .messages .message .text {
+  display: table-cell;
+  padding: 2px 5px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.chat .chatbox-container .form {
+  border-top: 1px solid #ccc;
+  min-height: 30px;
+}
+.chat .chatbox-container .form textarea {
+  min-height: 30px;
+  min-width: 100%;
+  max-width: 100%;
+  border: none;
+  padding: 3px;
+	resize: none;
+	color: black;
+}
+.chat .chatbox-container .form textarea:focus {
+  border: none;
+}
+.chat ul.users {
+  width: 150px;
+  padding: 2px;
+}
+.chat ul.users li {
+  margin: 0 0 3px 0;
+  cursor: pointer;
+}
+.chat ul.users li:hover {
+  text-decoration: underline;
+}
+.chat ul.users li i {
+  font-size: 10px;
+  color: transparent;
+  margin: 0 2px 0 0;
+}
+.chat ul.users li i.state-online {
+  color: #27ae60;
+}
+.chat ul.users li i.state-offline {
+  color: #e74c3c;
+}

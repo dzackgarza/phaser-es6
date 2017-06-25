@@ -1,0 +1,89 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: inherit;
+  width: inherit;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000 !important;
+	overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'warriorquest';
+  src: url('/assets/fonts/warriorquest.ttf') format('truetype');
+}
+
+.workaround {
+  font-family: 'warriorquest';
+  position: absolute;
+  z-index: -999;
+}
+
+.fullhw {
+  width: 100%;
+  height: 100%;
+}
+
+#content {
+	min-width: 60vw;
+}
+
+#panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#informationTabs {
+  background-color: #000;
+  border: 1px dotted white;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+	margin-bottom: 5px;
+}
+
+#chat {
+  background-color: #000;
+  border-left: 1px dotted white;
+	border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+.rowParent,
+.columnParent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.columnParent {
+	flex-direction: column;
+}
+
+.flexChild {
+	flex: 1;
+}
+
+.tab-pane {
+	margin-top: 8%;
+}
+
+td {
+	border-top: none !important;
+}
+
+table {
+	background-color: rgba(24, 24, 24, 0.25) !important;
+}
